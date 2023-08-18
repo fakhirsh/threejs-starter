@@ -116,3 +116,7 @@ or:
 ```
 <Canvas gl={{ useLegacyLights: true }} />
 ```
+
+### 2. Color theory
+
+https://threejs.org/docs/#manual/en/introduction/Color-management
