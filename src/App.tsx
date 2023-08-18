@@ -27,7 +27,8 @@ function Cube(){
 
 function ThreeScene(){
   return(
-  <Canvas>
+  <Canvas style={{ background: "darkgreen" }} >
+
       <ambientLight intensity={1}/>
       <pointLight position={[10, 10, 10]} />
       <pointLight intensity={900} position={[10, 10, 10]} />
