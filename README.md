@@ -1,13 +1,22 @@
 # Three.js Starter
 
+After cloning the repository, run the following to install all dependencies:
+
+```
+npm install
+```
+
+# History *(Optional)*
+
+**Reference:**
+
+[Create your own 3D website using @react-three/fiber (r3f), React, TypeScript, Vite and TailwindCSS](https://www.youtube.com/watch?v=MeBh3SUYqJw)
+
 This is a starter project for [Three.js](https://threejs.org/) made using `React.js`. It supports the following:
 
 1. React three fiber
 2. Tailwind CSS 
 3. Typescript
-
-
-# History
 
 ## Create React App using Vite
 
@@ -71,6 +80,23 @@ npm run dev
 Run the following command to add `three.js` and `react-three-fiber` to the project:
 
 ```
-npm install three react-three-fiber
+npm install three @react-three/fiber
 ```
 
+**Very important:** You must install the following because three.js is javascript by default. We need to add supprt for typescript:
+
+```
+npm install -D @types/three
+```
+
+Also install `drei` for some useful components:
+
+```
+npm install @react-three/drei
+```
+
+Optionally, install react spring for animmations:
+
+```
+npm install @react-spring/web
+```
