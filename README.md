@@ -100,3 +100,19 @@ Optionally, install react spring for animmations:
 ```
 npm install @react-spring/web
 ```
+
+## Bugs and Fixes
+
+### 1. Lighting and Shading issues
+
+Initially the scene shading was flat. It appears that new three.js verson completely changed the way how lights work [*(read here)*](https://discourse.threejs.org/t/updates-to-lighting-in-three-js-r155/53733) and [*(here)*](https://discord.com/channels/740090768164651008/1141991389190692996).
+
+With the latest three.js version physical lighting requires shorter decay/stronger intensity:
+
+```
+<pointLight intensity={900} position={[10, 10, 10]} />
+```
+or:
+```
+<Canvas gl={{ useLegacyLights: true }} />
+```
